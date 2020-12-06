@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/news"
+        android:textSize="22sp" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hot"
+        android:textSize="22sp" />
+
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/actualite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/actualit"
+        android:textSize="22sp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/valider"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</LinearLayout>

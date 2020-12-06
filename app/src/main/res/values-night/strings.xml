@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="airweb">Airweb</string>
+    <string name="ops_no_news_founded">Ops no news founded</string>
+    <string name="tri">Tri</string>
+    <string name="filter">Filter</string>
+    <string name="date">Date</string>
+    <string name="title">Title</string>
+    <string name="actualit">Actualité</string>
+    <string name="news">News</string>
+    <string name="hot">Hot</string>
+    <string name="valider">Valider</string>
+    <string name="about_airweb">About Airweb</string>
+    <string name="tel">+33 1 76 61 65 10</string>
+    <string name="tel_titile">Tel :</string>
+    <string name="email">contact@airweb.fr</string>
+    <string name="mail_title">Mail :</string>
+    <string name="address">Adresse:</string>
+    <string name="address_value">1 Rue Royale, Bureaux de Colline, 92210 Saint Cloud</string>
+</resources>

@@ -1,0 +1,92 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "fr.airweb.news"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        dataBinding = true
+        // for view binding:
+        viewBinding = true
+    }
+
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //RecycleView library
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    //CardView library
+    implementation "androidx.cardview:cardview:1.0.0"
+    //Logger library
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Retrofit Gson rxjava
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.6.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.7.2'
+
+    //Koin
+    implementation "org.koin:koin-android:2.0.1"
+    implementation "org.koin:koin-android-architecture:1.0.0-alpha-12"
+    implementation 'org.koin:koin-android-viewmodel:2.0.1'
+    testImplementation "org.koin:koin-test:2.0.1"
+
+    //RxJava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.13'
+
+    // Android Architecture Component LiveData & ViewModel
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    //Room Library
+    implementation 'androidx.room:room-runtime:2.2.5'
+    implementation 'androidx.room:room-rxjava2:2.2.5'
+    kapt 'androidx.room:room-compiler:2.2.5'
+
+    //SearchView
+    implementation 'com.github.Ferfalk:SimpleSearchView:0.1.6'
+    //Network check library
+    implementation 'com.github.pwittchen:reactivenetwork-rx2:3.0.6'
+    
+
+}
